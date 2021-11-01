@@ -8,6 +8,7 @@
     <Company>Daniel Frantik</Company>
     <Copyright>Copyright (C) Daniel Frantik 2017</Copyright>
     <PackageTags>Mikrotik</PackageTags>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>

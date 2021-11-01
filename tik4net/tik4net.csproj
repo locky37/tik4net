@@ -12,9 +12,14 @@
 		<AssemblyName>tik4net</AssemblyName>
 		<RootNamespace>tik4net</RootNamespace>
 		<Company>Daniel Frantik</Company>
+		<Platforms>AnyCPU;x64</Platforms>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<DefineConstants>TRACE;DEBUG</DefineConstants>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+	  <DefineConstants>TRACE;DEBUG</DefineConstants>
+	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 	</PropertyGroup>
 </Project>

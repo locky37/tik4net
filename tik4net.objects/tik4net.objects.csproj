@@ -1,37 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net5.0</TargetFramework>
+    <Description>Mikrotik API library - O/R mapper API</Description>
+    <Version>3.0.0</Version>
+    <Authors>Daniel Frantik</Authors>
+    <Company>Daniel Frantik</Company>
+    <Copyright>Copyright (C) Daniel Frantik 2017</Copyright>
+    <PackageTags>Mikrotik</PackageTags>
   </PropertyGroup>
-   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-     <OutputType>Library</OutputType>
-   </PropertyGroup>
-   <PropertyGroup>
-     <TargetFrameworks>net462;net35;net40;net452;netcoreapp1.1;netcoreapp2.0;netcoreapp2.2;netcoreapp3.1;netstandard1.3;netstandard1.4;netstandard1.6</TargetFrameworks>
-     <Description>Mikrotik API library - O/R mapper API</Description>
-     <Authors>Daniel Frantik</Authors>
-     <Copyright>Copyright (C) Daniel Frantik 2017</Copyright>
-     <PackageTags>Mikrotik</PackageTags>
-     <PackageOutputPath>../Build</PackageOutputPath>
-     <VersionPrefix>3.0.0</VersionPrefix>
-     <VersionSuffix Condition=" '$(BUILD_BUILDNUMBER)' != '' ">CI-$(BUILD_BUILDNUMBER)</VersionSuffix>
-     <VersionSuffix Condition=" '$(PREVIEW_NUMBER)' != '' ">pre-$(PREVIEW_NUMBER)</VersionSuffix>
-     <AssemblyName>tik4net.objects</AssemblyName>
-     <RootNamespace>tik4net.Objects</RootNamespace>
-     <ApplicationIcon />
-     <OutputTypeEx>library</OutputTypeEx>
-     <StartupObject />
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-     <DefineConstants>TRACE</DefineConstants>
-     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net35|AnyCPU'">
-     <OutputPath>bin\Debug\</OutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net35|AnyCPU'">
-     <DocumentationFile>bin\Release\net35\tik4net.objects.xml</DocumentationFile>
-   </PropertyGroup>
-   <ItemGroup>
-     <ProjectReference Include="..\tik4net\tik4net.csproj" />
-   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\tik4net\tik4net.csproj" />
+  </ItemGroup>
+
 </Project>
